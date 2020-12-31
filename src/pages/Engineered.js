@@ -59,6 +59,10 @@ export const EngineeringPage = () => {
         JavaScript - they care about the product experience and you can use
         either tool to make a good product. So focus on that instead.
       </Text>
+
+      <Text textAlign="justify">
+        <strong>ok but what do you actually do at work?</strong>
+      </Text>
     </div>
   );
 };

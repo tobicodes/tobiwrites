@@ -53,6 +53,7 @@ export const HeaderText = ({ children, size = "md", textAlign = "center" }) => {
       style={{
         fontWeight: "700",
         fontSize: "54px",
+        marginTop: "0",
         marginBottom: "32px",
         textAlign: textAlign,
       }}
