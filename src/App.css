@@ -9,3 +9,11 @@
   /* min-height: 70vh; */
   text-align: center;
 }
+
+.engPageContainer {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 70px 116px; /* how to make this responsive??*/
+  /* min-height: 70vh; */
+  /* text-align: left; */
+}
