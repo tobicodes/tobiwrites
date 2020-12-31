@@ -1,20 +1,24 @@
 import React from "react";
+import { HeaderText, Text } from "../helpers";
 
-export const EngineeringPage = ({}) => {
+export const EngineeringPage = () => {
   return (
     <div className="engPageContainer">
-      <HeaderText>making things makes things better (sometimes)</HeaderText>
+      <HeaderText>
+        making things makes things better{" "}
+        <span style={{ fontStyle: "oblique" }}>sometimes</span>
+      </HeaderText>
 
-      <p>
+      <Text textAlign="justify">
         {" "}
         I like to build things that solve users’ problems and are delightful to
         use. This can take many forms — sometimes I’m automating a process that
         was previously manual and required many painful steps. Other times, I’m
         making it possible for someone to do something that wasn’t possible
         before.{" "}
-      </p>
+      </Text>
 
-      <p>
+      <Text textAlign="justify">
         I love software because it’s an unparalleled change agent which we can
         wield for good. Software can extinguish boring, painful, monotonous
         tasks. Software can provide personalised educational experiences that
@@ -23,9 +27,10 @@ export const EngineeringPage = ({}) => {
         efficacy of different public policy ideas. Software can help biologists
         design new therapeutics and cures for germline mutations. Software can
         do a lot of good if we make it happen.{" "}
-      </p>
+      </Text>
 
-      <p>
+      <Text textAlign="justify">
+        {" "}
         In 2016, I was fascinated by the prospect of “synthetic biology” (the
         field of designing microbes to be mini-factories that churn out drugs,
         essential chemicals and greener fuels). The idea of being able to
@@ -43,9 +48,8 @@ export const EngineeringPage = ({}) => {
         resist. So I took a detour into software engineering. Maybe one day I’ll
         find a way to combine software engineering and biotech in a way to helps
         people. We’ll see
-      </p>
-
-      <p>
+      </Text>
+      <Text textAlign="justify">
         <strong>Short but necessary rant</strong> - Software engineers spend too
         much time discussing the tools, frameworks and languages and too little
         time discussing so called “soft-skills”. As long as software is being
@@ -54,43 +58,7 @@ export const EngineeringPage = ({}) => {
         software. Your users don’t care if you used TypeScript or vanilla
         JavaScript - they care about the product experience and you can use
         either tool to make a good product. So focus on that instead.
-      </p>
+      </Text>
     </div>
-  );
-};
-
-const HeaderText = ({ children, size = "md", textAlign = "center" }) => {
-  // TODO use size to determine css className and put this in some util folder
-  return (
-    <h1
-      style={{
-        fontWeight: "700",
-        fontSize: "54px",
-        marginBottom: "32px",
-        textAlign: textAlign,
-      }}
-    >
-      {children}
-    </h1>
-  );
-};
-
-const ExternalLink = ({ href, children }) => {
-  return (
-    <a
-      style={{
-        // color: "#f78978",
-        // color: "#DE705F",
-        color: "chocolate",
-        fontSize: `calc(0vw + 1rem)`,
-        textDecoration: "underline",
-      }}
-      className="tbd"
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-    >
-      {children}
-    </a>
   );
 };
