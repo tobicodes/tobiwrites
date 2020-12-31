@@ -2,6 +2,8 @@
 
 home page for my personal stuff online - professional work, personal work, written pieces and spoken pieces. currently, this is a static site written in React.
 
+![image](https://user-images.githubusercontent.com/24980987/103426381-ecb90900-4b6d-11eb-939b-2748d5ee7a60.png)
+
 # Setup
 
 Fork then clone this repo
