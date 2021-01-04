@@ -41,8 +41,9 @@ export const Header = () => {
         >
           <InternalLink to="/"> home</InternalLink>
           <InternalLink to="/engineered"> engineered</InternalLink>
-          <InternalLink to="/spoken"> spoken</InternalLink>
           <InternalLink to="/tech-ethics"> tech ethics</InternalLink>
+          <InternalLink to="/spoken"> spoken</InternalLink>
+
           <InternalLink to="/written"> written</InternalLink>
           <InternalLink to="/faqs">faqs</InternalLink>
         </div>

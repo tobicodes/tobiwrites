@@ -3,6 +3,7 @@ import "./App.css";
 import { Header } from "./Header";
 import { EngineeringPage } from "./pages/Engineered";
 import { HomePage } from "./pages/Home";
+import { SpokenPage } from "./pages/Spoken";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </Route>
         <Route exact path="/spoken">
           <Header />
-          <p>hey</p>
+          <SpokenPage />
         </Route>
         <Route exact path="/engineered">
           <Header />

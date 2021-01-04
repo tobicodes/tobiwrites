@@ -31,7 +31,8 @@ export const ExternalLink = ({ href, children }) => {
       style={{
         // color: "#f78978",
         // color: "#DE705F",
-        color: "chocolate",
+        // color: "chocolate",
+        color: "#f74034",
         fontSize: `calc(0vw + 1rem)`,
         textDecoration: "underline",
       }}
@@ -48,11 +49,18 @@ export const ExternalLink = ({ href, children }) => {
 // standard header text
 export const HeaderText = ({ children, size = "md", textAlign = "center" }) => {
   // TODO use size to determine css className and put this in some util folder
+
+  const fontSize = {
+    sm: "24px",
+    md: "54px",
+    lg: "72px",
+  };
+
   return (
     <h1
       style={{
         fontWeight: "700",
-        fontSize: "54px",
+        fontSize: fontSize[size] ?? "54px",
         marginTop: "0",
         marginBottom: "32px",
         textAlign: textAlign,
