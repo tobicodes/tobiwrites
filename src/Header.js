@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { InternalLink } from "./helpers";
+import { InternalNavLink } from "./helpers";
 
 export const Header = () => {
   // TODO write styles into a css file
@@ -39,13 +39,12 @@ export const Header = () => {
             textAlign: "right",
           }}
         >
-          <InternalLink to="/"> home</InternalLink>
-          <InternalLink to="/engineered"> engineered</InternalLink>
-          <InternalLink to="/tech-ethics"> tech ethics</InternalLink>
-          <InternalLink to="/spoken"> spoken</InternalLink>
-
-          <InternalLink to="/written"> written</InternalLink>
-          <InternalLink to="/faqs">faqs</InternalLink>
+          <InternalNavLink to="/"> home</InternalNavLink>
+          <InternalNavLink to="/engineered"> engineered</InternalNavLink>
+          <InternalNavLink to="/tech-ethics"> tech ethics</InternalNavLink>
+          <InternalNavLink to="/spoken"> spoken</InternalNavLink>
+          <InternalNavLink to="/written"> written</InternalNavLink>
+          <InternalNavLink to="/faqs">faqs</InternalNavLink>
         </div>
       </div>
     </>

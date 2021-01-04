@@ -1,21 +1,17 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import "./helpers.css";
 
-// use for navigation within our site
+// NavLink for internal navigation, this also supports highlighting the currently active route
 
-export const InternalLink = ({ to, children }) => {
+export const InternalNavLink = ({ to, children }) => {
   return (
     <NavLink
+      className="navLinkStyle"
       exact={true}
       to={to}
       activeStyle={{
         fontWeight: "bold",
         color: "red", // tomato
-      }}
-      style={{
-        color: "#000",
-        fontSize: `calc(0vw + 1rem)`,
-        padding: "1em",
-        textDecoration: "none",
       }}
     >
       {children}
@@ -23,24 +19,20 @@ export const InternalLink = ({ to, children }) => {
   );
 };
 
+// regular link that is not in the navigation. useful for inline-linking to other rotues on page
+export const InternalLink = ({ to, children }) => {
+  return (
+    <Link className="linkStyle" to={to}>
+      {children}
+    </Link>
+  );
+};
+
 // use to navigate to other websites
 
 export const ExternalLink = ({ href, children }) => {
   return (
-    <a
-      style={{
-        // color: "#f78978",
-        // color: "#DE705F",
-        // color: "chocolate",
-        color: "#f74034",
-        fontSize: `calc(0vw + 1rem)`,
-        textDecoration: "underline",
-      }}
-      className="tbd"
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-    >
+    <a className="linkStyle" href={href} target="_blank" rel="noreferrer">
       {children}
     </a>
   );

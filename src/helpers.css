@@ -1,0 +1,26 @@
+.linkStyle {
+  color: #214744;
+  font-weight: 700;
+  font-size: calc(0vw + 1rem);
+  text-decoration: underline;
+}
+
+/* 
+     color: "#f78978",
+    //     // color: "#DE705F",
+    //     // color: "chocolate",
+    //     // color: "#f74034",
+    //     color: "#214744",
+    //     fontWeight: "700",
+    //     fontSize: `calc(0vw + 1rem)`,
+    //     textDecoration: "underline",
+    //   }}
+
+    */
+
+.navLinkStyle {
+  color: #000;
+  font-size: calc(0vw + 1rem);
+  padding: 1em;
+  text-decoration: none;
+}
