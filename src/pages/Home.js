@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HeaderText, ExternalLink, InternalLink, Text } from "../helpers";
+import { InternalNavLink } from "../helpers";
+
+const isMobileDevice = () => {
+  const limit = 480; // double check this
+  // screen.width <= 480
+  return window.innerWidth <= limit;
+};
 
 export const HomePage = () => {
+  const [isMobile, setIsMobile] = useState(isMobileDevice());
+  // const isMobile = isMobileDevice();
+
+  useEffect(() => {
+    setIsMobile();
+  }, [window.innerWidth, setIsMobile]);
   return (
-    <div className="homeMainContent">
+    <div className="contentContainer">
       {/* <HeaderText>Hey I'm Tobi</HeaderText> */}
       <h1 className="contentHeader">Hey I'm Tobi</h1>
 
@@ -24,6 +37,27 @@ export const HomePage = () => {
         while. There are occasional nuggets of good stuff here. Here's a recent
         one.
       </Text>
+      {isMobile ? <AMP /> : "not mobile"}
+    </div>
+  );
+};
+
+const AMP = () => {
+  console.log("MOBILE OOO");
+  return (
+    <div
+      // className="navListContainer"
+      style={{
+        marginLeft: "auto",
+        paddingLeft: "2vw",
+        textAlign: "center",
+      }}
+    >
+      <InternalNavLink to="/engineered"> eng</InternalNavLink>
+      <InternalNavLink to="/tech-ethics"> tech ethics</InternalNavLink>
+      <InternalNavLink to="/spoken"> spoken</InternalNavLink>
+      <InternalNavLink to="/written"> written</InternalNavLink>
+      <InternalNavLink to="/faqs">faqs</InternalNavLink>
     </div>
   );
 };

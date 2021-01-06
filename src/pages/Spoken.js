@@ -3,8 +3,9 @@ import { ExternalLink, HeaderText, Text } from "../helpers";
 
 export const SpokenPage = () => {
   return (
-    <div className="engPageContainer">
-      <HeaderText>waffle and babble</HeaderText>
+    <div className="contentContainer">
+      {/* <HeaderText>waffle and babble</HeaderText> */}
+      <h1 className="contentHeader">waffle and babble</h1>
 
       <Text textAlign="justify">
         I've had the pleasure to speak at a few technical conferences in my tech
@@ -29,7 +30,7 @@ export const SpokenPage = () => {
         Spoken work
       </HeaderText>
 
-      <Text textAlign="justify">
+      <Text textAlign="center">
         <ExternalLink href="https://vimeo.com/475367801">
           Hermez Pipelines - Forging the path to a delightful deployment
           experience
@@ -37,13 +38,13 @@ export const SpokenPage = () => {
         (with Lise, SpinnakerSummit2020)
       </Text>
 
-      <Text textAlign="justify">
+      <Text textAlign="center">
         <ExternalLink href="https://youtu.be/-xsmzRTt490">
           Building easy-to-use products in a complex infrastructure world
         </ExternalLink>{" "}
         (with Lise, Dev/Color 2020)
       </Text>
-      <Text textAlign="justify">
+      <Text textAlign="center">
         {" "}
         <ExternalLink href="https://youtu.be/KkKSoQBp2oQ?t=1024">
           Building a CD Platform to K8s that developers love
@@ -51,7 +52,7 @@ export const SpokenPage = () => {
         (with Euccas, Kubecon 2019)
       </Text>
 
-      <Text textAlign="justify">
+      <Text textAlign="center">
         {" "}
         <ExternalLink href="https://podcasts.apple.com/us/podcast/020-bioengineer-to-software-engineer-tobi-ogunnaike/id1363822164?i=1000413704684">
           From x to Software Engineer

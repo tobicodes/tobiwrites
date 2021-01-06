@@ -3,11 +3,15 @@ import { HeaderText, Text } from "../helpers";
 
 export const EngineeringPage = () => {
   return (
-    <div className="engPageContainer">
-      <HeaderText>
+    <div className="contentContainer">
+      <h1 className="contentHeader">
         making things makes things better{" "}
         <span style={{ fontStyle: "oblique" }}>sometimes</span>
-      </HeaderText>
+      </h1>
+      {/* <HeaderText>
+        making things makes things better{" "}
+        <span style={{ fontStyle: "oblique" }}>sometimes</span>
+      </HeaderText> */}
 
       <Text textAlign="justify">
         {" "}
@@ -63,6 +67,7 @@ export const EngineeringPage = () => {
       <Text textAlign="justify">
         <strong>ok but what do you actually do at work?</strong>
       </Text>
+      <Text>um</Text>
     </div>
   );
 };

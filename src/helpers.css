@@ -23,7 +23,7 @@
     text-align: center;
   }
 
-  .homeMainContent {
+  .contentContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,6 +38,7 @@
 
 /* large screens */
 
+/* @media screen and (min-width: 481px) { */
 @media screen and (min-width: 481px) {
   .header {
     margin: 0;
@@ -47,18 +48,29 @@
     align-items: center;
   }
 
-  .linkStyle {
+  /* .linkStyle {
     color: #214744;
     font-weight: 700;
     font-size: calc(0vw + 1rem);
     text-decoration: underline;
-  }
+  } */
 
   .navLinkStyle {
     color: #000;
     font-size: calc(0vw + 1rem);
     padding: 1em;
     text-decoration: none;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 116px;
+    text-align: center;
+    max-width: 50%;
   }
 }
 

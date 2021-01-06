@@ -7,17 +7,7 @@ export const Header = () => {
 
   return (
     <>
-      <div
-        className="header"
-        // style={{
-        //   margin: 0,
-        //   padding: "2vw 4vw",
-        //   display: "flex",
-        //   flexWrap: "nowrap",
-        //   //   flex: "1 0 67%",
-        //   alignItems: "center",
-        // }}
-      >
+      <div className="header">
         <Link to="/" style={{ textDecoration: "none" }}>
           {" "}
           <h1
