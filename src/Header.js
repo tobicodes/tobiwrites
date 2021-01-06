@@ -8,23 +8,26 @@ export const Header = () => {
   return (
     <>
       <div
-        style={{
-          margin: 0,
-          padding: "2vw 4vw",
-          display: "flex",
-          flexWrap: "nowrap",
-          // flex: "1 0 67%",
-          alignItems: "center",
-        }}
+        className="header"
+        // style={{
+        //   margin: 0,
+        //   padding: "2vw 4vw",
+        //   display: "flex",
+        //   flexWrap: "nowrap",
+        //   //   flex: "1 0 67%",
+        //   alignItems: "center",
+        // }}
       >
         <Link to="/" style={{ textDecoration: "none" }}>
           {" "}
           <h1
+            className="tobiOgunnaike"
             style={{
               fontSize: `calc((2 - 1) * 1.2vw + 1rem`, // squarespace does this
               color: "#000",
               lineHeight: "1.4em",
               margin: 0,
+              //   display: "block",
             }}
           >
             tobi ogunnaike
@@ -40,7 +43,7 @@ export const Header = () => {
           }}
         >
           <InternalNavLink to="/"> home</InternalNavLink>
-          <InternalNavLink to="/engineered"> engineered</InternalNavLink>
+          <InternalNavLink to="/engineered"> eng</InternalNavLink>
           <InternalNavLink to="/tech-ethics"> tech ethics</InternalNavLink>
           <InternalNavLink to="/spoken"> spoken</InternalNavLink>
           <InternalNavLink to="/written"> written</InternalNavLink>

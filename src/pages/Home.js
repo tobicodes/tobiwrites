@@ -4,7 +4,8 @@ import { HeaderText, ExternalLink, InternalLink, Text } from "../helpers";
 export const HomePage = () => {
   return (
     <div className="homeMainContent">
-      <HeaderText>Hey I'm Tobi</HeaderText>
+      {/* <HeaderText>Hey I'm Tobi</HeaderText> */}
+      <h1 className="contentHeader">Hey I'm Tobi</h1>
 
       <Text>
         {" "}

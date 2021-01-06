@@ -1,19 +1,24 @@
-.homeMainContent {
+/* .homeMainContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50%;
   margin: 0 auto;
-  padding: 70px 116px; /* how to make this responsive??*/
-  /* min-height: 70vh; */
+  padding: 70px 116px; 
   text-align: center;
-}
+} */
+
+/* max-width: 50%; */
+/* min-height: 70vh; */
 
 .engPageContainer {
   max-width: 50%;
   margin: 0 auto;
   padding: 70px 116px; /* how to make this responsive??*/
-  /* min-height: 70vh; */
-  /* text-align: left; */
+}
+
+@media screen and (max-width: 1943px) and (min-width: 0) and (orientation: portrait) {
+  h1 {
+    font-size: calc((2.8 - 1) * 1.2vh + 1rem);
+  }
 }
